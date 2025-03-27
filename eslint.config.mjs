@@ -16,7 +16,8 @@ const eslintConfig = [
       "no-unused-vars": "off",
       "@typescript-eslint/no-unused-vars": "off",
       "@typescript-eslint/no-explicit-any": "off",
-      "no-var": 0
+      "no-var": 0,
+      "@typescript-eslint/ban-ts-comment": "error",
     }
 
   }),
