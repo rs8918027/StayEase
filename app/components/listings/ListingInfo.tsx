@@ -8,7 +8,8 @@ import ListingCategory from "./ListingCategory";
 import dynamic from "next/dynamic";
 
 const Map = dynamic(() => import("../Map",{
-    //@ts-expect-error
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
     ssr: false
 }))
 
