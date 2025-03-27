@@ -8,7 +8,7 @@ import ListingCategory from "./ListingCategory";
 import dynamic from "next/dynamic";
 
 const Map = dynamic(() => import("../Map",{
-    // @ts-ignore
+    //@ts-expect-error
     ssr: false
 }))
 
