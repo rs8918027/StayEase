@@ -1,4 +1,4 @@
-
+export const dynamic = 'force-dynamic'
 
 import ClientOnly from "./components/ClientOnly";
 import Container from "./components/Container";
@@ -10,6 +10,7 @@ import getCurrentUser from "./actions/getCurrentUser";
 interface HomeProps{
   searchParams: IListingsParams;
 }
+
 
 const Home = async({ searchParams }: HomeProps) => {
   const listings = await getListings(searchParams)
