@@ -77,3 +77,11 @@ model Reservation{
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
   listing Listing @relation(fields: [listingId], references: [id], onDelete: Cascade) 
 }
+
+model PasswordResetToken {
+  id        String   @id @map("_id") @default(cuid())
+  email     String
+  token     String   @unique
+  expires   DateTime
+  createdAt DateTime @default(now())
+}
